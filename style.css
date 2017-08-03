@@ -17,10 +17,13 @@ li { margin: 0 0 1.2em 0; }
 
 a {
 	color: #008bcb;
-	text-decoration: none;
+  text-decoration: none;
+  background-color: #e5e5e5;
+  /* Must define bgc for anchor link before define bgc for visited link */
 }
 
-a:visited { color: #aaa; }
+/* Cannot rgba value on the visited link */
+a:visited { color: #aaa; background-color: #fff; }
 
 a:hover {
 	text-decoration: underline;
