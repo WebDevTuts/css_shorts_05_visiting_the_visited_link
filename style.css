@@ -20,10 +20,14 @@ a {
   text-decoration: none;
   background-color: #fff;
   /* Must define bgc for anchor link before define bgc for visited link */
+  display: inline-block;
+  padding: 4px 15px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, .8);
 }
 
 /* Cannot rgba value on the visited link */
-a:visited { color: #aaa; background-color: #e5e5e5; }
+a:visited { color: #aaa; background-color: #e5e5e5; border: #fff; }
 
 a:hover {
 	text-decoration: underline;
